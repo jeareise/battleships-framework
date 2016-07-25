@@ -9,15 +9,6 @@ public class Main
 
     public static void main(String[] args)
     {
-        try
-        {
-            URLClassLoader bot = URLClassLoader.newInstance(new URL[]{new URL(args[0]), new URL(args[1])});
-
-        }
-        catch (MalformedURLException e)
-        {
-            e.printStackTrace();
-        }
 
 
 

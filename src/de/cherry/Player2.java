@@ -3,7 +3,7 @@ package de.cherry;
 /**
  * Created by joshua on 25.07.16.
  */
-public class SchiffeversenkenBot2 implements SchiffeversenkenBot{
+public class Player2 implements Player {
     @Override
     public void setzen() {
 

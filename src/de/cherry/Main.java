@@ -12,13 +12,13 @@ public class Main
 
 
 
-        SchiffeversenkenBot schiffeversenkenBot1 = new SchiffeversenkenBot1();
-        SchiffeversenkenBot schiffeversenkenBot2 = new SchiffeversenkenBot2();
+        Player player1 = new Player1();
+        Player player2 = new Player2();
 
         String[] st = {"","","",""};
 
         Arena arena = new Arena();
-        arena.startGame(schiffeversenkenBot1, schiffeversenkenBot2);
+        arena.startGame(player1, player2);
 
 
     }

@@ -9,6 +9,7 @@ public class Arena {
     private Player schiffeversenkerBot2;
 
     public Arena() {
+        //asdf
     }
 
     public void startGame(Player schiffeversenkerBot1, Player schiffeversenkerBot2){

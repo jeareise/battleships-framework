@@ -1,4 +1,8 @@
-package de.cherry;
+package de.cherry.battleship_helper;
+
+import de.cherry.battleship.SetShipExeption;
+import de.cherry.battleship.Ship;
+import de.cherry.battleship.ShipMap;
 
 /**
  * Created by Max on 26.07.2016.

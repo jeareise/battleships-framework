@@ -1,4 +1,4 @@
-package de.cherry;
+package de.cherry.battleship;
 
 import java.util.List;
 

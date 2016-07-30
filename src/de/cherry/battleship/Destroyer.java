@@ -1,4 +1,4 @@
-package de.cherry;
+package de.cherry.battleship;
 
 /**
  * Created by Max on 26.07.2016.

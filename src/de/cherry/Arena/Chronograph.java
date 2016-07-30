@@ -1,4 +1,4 @@
-package de.cherry;
+package de.cherry.Arena;
 
 public class Chronograph {
     private long millis;

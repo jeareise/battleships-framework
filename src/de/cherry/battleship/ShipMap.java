@@ -1,4 +1,9 @@
-package de.cherry;
+package de.cherry.battleship;
+
+import de.cherry.battleship.Battleship;
+import de.cherry.battleship.Boomer;
+import de.cherry.battleship.Cruiser;
+import de.cherry.battleship.Destroyer;
 
 /**
  * Created by Max on 26.07.2016.

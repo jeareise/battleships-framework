@@ -1,5 +1,10 @@
 //Version 0.1
-package de.cherry;
+package de.cherry.Arena;
+
+import de.cherry.battleship.Player;
+import de.cherry.battleship.SetShipExeption;
+import de.cherry.battleship.ShipMap;
+import de.cherry.battleship_helper.Validator;
 
 /**
  * Created by joshua on 25.07.16.

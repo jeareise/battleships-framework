@@ -1,9 +1,5 @@
 package de.cherry;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLClassLoader;
-
 public class Main
 {
 
@@ -12,8 +8,28 @@ public class Main
 
 
 
-        Player player1 = new Player1();
-        Player player2 = new Player2();
+        Player player1 = new Player() {
+            @Override
+            public void setzen(ShipMap shipMap) {
+
+            }
+
+            @Override
+            public String[] schiessen() {
+                return new String[0];
+            }
+        };
+        Player player2 = new Player() {
+            @Override
+            public void setzen(ShipMap shipMap) {
+
+            }
+
+            @Override
+            public String[] schiessen() {
+                return new String[0];
+            }
+        };
 
         String[] st = {"","","",""};
 

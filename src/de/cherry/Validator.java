@@ -70,4 +70,48 @@ public class Validator {
         shipValid(ship.getSize(), startPos, endPos);
         return passed;
     }
+
+    public boolean  onShip(int[] shot, ShipMap shipMap) {
+        for (Ship ship : shipMap.battleship) {
+            if(onShip(shot, ship)) return true;
+        }
+        for (Ship ship : shipMap.cruiser) {
+            if(onShip(shot, ship)) return true;
+        }
+        for (Ship ship : shipMap.destroyer) {
+            if(onShip(shot, ship)) return true;
+        }
+        for (Ship ship : shipMap.boomer) {
+            if(onShip(shot, ship)) return true;
+        }
+        return false;
+    }
+
+    private boolean onShip(int[] shot, Ship ship) {
+        boolean  vertical;
+
+        int[] startPos = ship.getStartPos();
+        int[] endPos = ship.getEndPos();
+
+        if(startPos[0] == endPos[0]) {
+            vertical = true;
+        }
+        else if (startPos[1] == endPos[1]){
+            vertical = false;
+        }
+        else {
+            throw new RuntimeException("Schiff krumm und nicht richtig überprüft");
+        }
+        if (vertical) {
+            if(shot[1] <= endPos[1] || shot[1] >= startPos[1] ) {
+                return true;
+            }
+        } else {
+            if(shot[0] <= endPos[0] || shot[0] >= startPos[0] ) {
+                return true;
+            }
+        }
+        return false;
+
+    }
 }

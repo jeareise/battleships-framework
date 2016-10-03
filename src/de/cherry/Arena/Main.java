@@ -25,6 +25,11 @@ public class Main
             }
 
             @Override
+            public int[] schiessen() {
+                return new int[0];
+            }
+
+            @Override
             public void endOfRound(boolean won, ShipMap shipMap, List<int[]> shoots) {
 
             }
@@ -37,6 +42,11 @@ public class Main
 
             @Override
             public int[] schiessen(boolean sucessfullShoot, boolean shipDown) {
+                return new int[0];
+            }
+
+            @Override
+            public int[] schiessen() {
                 return new int[0];
             }
 

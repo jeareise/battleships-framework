@@ -118,4 +118,12 @@ public class Validator {
         return false;
 
     }
+
+    public boolean onMap(int[] schussPlayer1, int size) {
+        for (int aSchussPlayer1 : schussPlayer1) {
+            if (aSchussPlayer1 > size || aSchussPlayer1 < 0)
+                return false;
+        }
+        return true;
+    }
 }

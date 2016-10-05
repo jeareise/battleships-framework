@@ -7,7 +7,15 @@ public class ShootLog {
     private int[] position;
     private boolean onSchip;
     private boolean shipDown;
+    private boolean gameOver = true;
 
+    public boolean isGameOver() {
+        return gameOver;
+    }
+
+    public void setGameOver(boolean gameOver) {
+        this.gameOver = gameOver;
+    }
 
     public int[] getPosition() {
         return position;

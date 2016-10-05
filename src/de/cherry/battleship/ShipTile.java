@@ -8,6 +8,12 @@ public class ShipTile {
     private int posY;
     private boolean hitten = false;
 
+
+    public ShipTile(int posX, int posY) {
+        this.posX = posX;
+        this.posY = posY;
+    }
+
     public int getPosX() {
         return posX;
     }

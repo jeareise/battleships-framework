@@ -89,12 +89,12 @@ public class Arena {
             shipDownFromLastShootPlayer2 = shootLogShootPlayer2.isShipDown();
 
 
-            if (!chronographPlayer1.inTime() && shootLoggerPlayer2.isNoShipLeft()) {
+            if (!chronographPlayer1.inTime() && shootLogShootPlayer2.isGameOver()) {
                 System.out.println("Player 2 hat gewonnen");
                 einerHatGewonnen = true;
             }
 
-            if (!chronographPlayer2.inTime() && shootLoggerPlayer1isNoShipLeft()) {
+            if (!chronographPlayer2.inTime() && shootLogShootPlayer1.isGameOver()) {
                 System.out.println("Player 1 hat gewonnen");
                 einerHatGewonnen = true;
             }

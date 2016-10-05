@@ -1,62 +1,14 @@
 package de.cherry.Arena;
 
 import de.cherry.battleship.Player;
-import de.cherry.battleship.ShipMap;
 
-import java.util.List;
+import java.io.File;
 
-public class Main
-{
+public class Main {
 
-    public static void main(String[] args)
-    {
-
-
-
-        Player player1 = new Player() {
-            @Override
-            public void setzen(ShipMap shipMap) {
-
-            }
-
-            @Override
-            public int[] schiessen(boolean sucessfullShoot, boolean shipDown) {
-                return new int[0];
-            }
-
-            @Override
-            public int[] schiessen() {
-                return new int[0];
-            }
-
-            @Override
-            public void endOfRound(boolean won, ShipMap shipMap, List<int[]> shoots) {
-
-            }
-        };
-        Player player2 = new Player() {
-            @Override
-            public void setzen(ShipMap shipMap) {
-
-            }
-
-            @Override
-            public int[] schiessen(boolean sucessfullShoot, boolean shipDown) {
-                return new int[0];
-            }
-
-            @Override
-            public int[] schiessen() {
-                return new int[0];
-            }
-
-            @Override
-            public void endOfRound(boolean won, ShipMap shipMap, List<int[]> shoots) {
-
-            }
-        };
-
-        String[] st = {"","","",""};
+    public static void main(String[] args) {
+        Player player1 = new PlayerLoader().load(new File("F:\\Programmieren\\Projekts\\Idea\\pluginExample\\out\\artifacts\\pluginExample_jar\\"));
+        Player player2 = new PlayerLoader().load(new File("F:\\Programmieren\\Projekts\\Idea\\pluginExample\\out\\artifacts\\pluginExample_jar\\"));
 
         Arena arena = new Arena();
         arena.startGame(player1, player2);
